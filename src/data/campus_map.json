@@ -1,0 +1,29 @@
+{
+  "vertices": [
+    {"name": "Library", "kind": "building"},
+    {"name": "Science Block", "kind": "building"},
+    {"name": "Hostel A", "kind": "building"},
+    {"name": "Cafeteria", "kind": "building"},
+    {"name": "Admin Block", "kind": "building"},
+    {"name": "Main Junction", "kind": "junction"},
+    {"name": "North Junction", "kind": "junction"},
+    {"name": "East Junction", "kind": "junction"},
+    {"name": "Main Gate", "kind": "exit", "available": true},
+    {"name": "Sports Ground", "kind": "exit", "available": true},
+    {"name": "Back Gate", "kind": "exit", "available": true}
+  ],
+  "edges": [
+    ["Library", "North Junction", 40],
+    ["Science Block", "North Junction", 30],
+    ["North Junction", "Main Junction", 50],
+    ["North Junction", "Back Gate", 90],
+    ["Hostel A", "East Junction", 35],
+    ["East Junction", "Main Junction", 45],
+    ["East Junction", "Sports Ground", 60],
+    ["Cafeteria", "Main Junction", 25],
+    ["Admin Block", "Main Junction", 20],
+    ["Main Junction", "Main Gate", 40],
+    ["Library", "Admin Block", 70],
+    ["Cafeteria", "Sports Ground", 120]
+  ]
+}
